@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      "cordova-config@git://github.com/rstraub/cordova-config.git#0024864019321ff0dcf8b23b0b79708a3a2955eb",
+      "."
+    ]
+  ],
+  "_development": true,
+  "_from": "cordova-config@git://github.com/rstraub/cordova-config.git#0024864019321ff0dcf8b23b0b79708a3a2955eb",
+  "_id": "cordova-config@git://github.com/rstraub/cordova-config.git#0024864019321ff0dcf8b23b0b79708a3a2955eb",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-config",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "cordova-config@git://github.com/rstraub/cordova-config.git#0024864019321ff0dcf8b23b0b79708a3a2955eb",
+    "name": "cordova-config",
+    "escapedName": "cordova-config",
+    "rawSpec": "git://github.com/rstraub/cordova-config.git#0024864019321ff0dcf8b23b0b79708a3a2955eb",
+    "saveSpec": "git://github.com/rstraub/cordova-config.git#0024864019321ff0dcf8b23b0b79708a3a2955eb",
+    "fetchSpec": "git://github.com/rstraub/cordova-config.git",
+    "gitCommittish": "0024864019321ff0dcf8b23b0b79708a3a2955eb"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "/gulp-cordova-preference",
+    "/gulp-cordova-xml"
+  ],
+  "_resolved": "git://github.com/rstraub/cordova-config.git#0024864019321ff0dcf8b23b0b79708a3a2955eb",
+  "_spec": "git://github.com/rstraub/cordova-config.git#0024864019321ff0dcf8b23b0b79708a3a2955eb",
+  "_where": ".",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/SamVerschueren/cordova-config/issues"
+  },
+  "dependencies": {
+    "elementtree": "^0.1.6",
+    "pify": "^2.3.0",
+    "pinkie-promise": "^1.0.0"
+  },
+  "description": "Parse and edit the config.xml file of a cordova project",
+  "devDependencies": {
+    "ava": "*",
+    "coveralls": "^2.11.4",
+    "fs-extra": "^0.24.0",
+    "nyc": "^3.2.2",
+    "tempfile": "^1.1.1",
+    "xo": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/SamVerschueren/cordova-config",
+  "keywords": [
+    "cordova",
+    "config",
+    "xml"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "cordova-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamVerschueren/cordova-config.git"
+  },
+  "scripts": {
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "test": "xo && nyc ava"
+  },
+  "version": "0.6.2",
+  "xo": {
+    "rules": {
+      "new-cap": [
+        2,
+        {
+          "capIsNewExceptions": [
+            "XML"
+          ]
+        }
+      ]
+    }
+  }
+}
